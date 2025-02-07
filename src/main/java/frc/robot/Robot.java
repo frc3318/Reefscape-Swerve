@@ -37,8 +37,6 @@ public class Robot extends TimedRobot {
     public static final CTREConfigs ctreConfigs = new CTREConfigs();
     private Command m_autonomousCommand;
 
-    private RobotContainer m_robotContainer;
-
     // public PneumaticHub ph = new PneumaticHub(20);
     Compressor compressor = new Compressor(20, PneumaticsModuleType.REVPH);
     private PowerDistribution pdp = new PowerDistribution(20, ModuleType.kRev);
@@ -52,7 +50,6 @@ public class Robot extends TimedRobot {
         // Instantiate our RobotContainer. This will perform all our button bindings,
         // and put our
         // autonomous chooser on the dashboard.
-        m_robotContainer = RobotContainer.getInstance();
         HAL.report(tResourceType.kResourceType_Framework, tInstances.kFramework_RobotBuilder);
         enableLiveWindowInTest(true);
 
