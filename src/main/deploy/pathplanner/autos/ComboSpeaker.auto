@@ -1,0 +1,93 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.408601513944883,
+      "y": 5.503726295673142
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "autonShootCommand"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "ComboSpeakerP1"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "autonAcquireCommand"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ComboSpeakerP2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "autonShootCommand"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "ComboSpeakerP3"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "autonAcquireCommand"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ComboSpeakerP4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "autonShootCommand"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ComboSpeakerP5"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

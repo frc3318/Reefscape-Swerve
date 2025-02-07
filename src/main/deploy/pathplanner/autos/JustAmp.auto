@@ -1,0 +1,37 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.3740584827141216,
+      "y": 7.236630966152928
+    },
+    "rotation": -90.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "JustAmpP1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "autonAmpCommand"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "JustAmpP2"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
